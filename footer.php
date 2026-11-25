@@ -23,19 +23,19 @@
 			<p><?php echo the_field('footer_text', 'options');?></p>
 		</div>
 		<div class="col3">
-			<a href="https://wilmans.co.za/destinations/">Destinations</a>
-			<a href="https://wilmans.co.za/about">About</a>
-			<a href="https://wilmans.co.za/news-events/">News</a>
-			<a href="https://wilmans.co.za/contact">Contact</a>
+			<a href="/destinations/">Destinations</a>
+			<a href="/about">About</a>
+			<a href="/news-events/">News</a>
+			<a href="/contact">Contact</a>
 			<a href="#">Privacy Policy</a>
 		</div>
 		<div class="col4">
 			
 			<div class="socifoot">
 			
-                <a href="<?=$instagram?>" target="_blank"><img src="/wp-content/uploads/2025/12/link.png" alt="linkedin"></a>
-                <a href="<?=$linkedin?>" target="_blank"><img src="/wp-content/uploads/2025/12/insto.png" alt="instagram"></a>
-				<a href="<?=$facebook?>" target="_blank"><img src="/wp-content/uploads/2025/12/fbook.png" alt="facebook"></a>
+                <a href="<?=$instagram?>" target="_blank"><img src="/wp-content/themes/onedmc/assets/link.png" alt="linkedin"></a>
+                <a href="<?=$linkedin?>" target="_blank"><img src="/wp-content/themes/onedmc/assets/insto.png" alt="instagram"></a>
+				<a href="<?=$facebook?>" target="_blank"><img src="/wp-content/themes/onedmc/assets/fbook.png" alt="facebook"></a>
 			</div>
 		</div>
 		<?php echo do_shortcode('[contact-form-7 id="5874b0c" title="Newsletter"]');?>
@@ -46,12 +46,12 @@
 <a href="/contact" class="floating-contact-btn" aria-label="Contact Us">
     Contact
 </a>
-<div id="rfpmodal" class="modal">
+<div id="rfpmodal" class="modal" aria-hidden="true">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>Request For Proposal</h3>
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="rfp-title" tabindex="-1">
+    <button type="button" class="close" aria-label="Close request form">&times;</button>
+    <h3 id="rfp-title">Request For Proposal</h3>
    <?php echo do_shortcode('[contact-form-7 id="4d59b24" title="Contact form 1"]');?>
   </div>
 

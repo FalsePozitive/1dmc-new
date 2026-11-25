@@ -54,48 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 6000);
   });
 });
-//menu
-
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('#primary-menu');
-
-  menuToggle.addEventListener('click', function() {
-    menu.classList.toggle('active');
-    const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-    menuToggle.setAttribute('aria-expanded', !expanded);
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  // RFP MODAL
-  var modalx = document.getElementById("rfpmodal");
-  var btnx = document.getElementById("rfplaunch");
-  var spanx = document.getElementsByClassName("close")[0];
-
-  // Open modal
-  btnx.onclick = function () {
-    modalx.style.display = "flex";
-    modalx.classList.add("modopened");
-  };
-
-  // Close modal (X button)
-  spanx.onclick = function () {
-    modalx.style.display = "none";
-    modalx.classList.remove("modopened");
-  };
-
-  // Close modal when clicking outside
-  window.onclick = function (event) {
-    if (event.target === modalx) {
-      modalx.style.display = "none";
-      modalx.classList.remove("modopened");
-    }
-  };
-});
-
-
 $('#listbt').on('click', function() {
   $('.bgrid').addClass('listview');
 });

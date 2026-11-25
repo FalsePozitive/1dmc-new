@@ -95,7 +95,7 @@ endif;
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<button type="button" class="menu-toggle" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
   ☰
 </button>
 			<?php
@@ -108,7 +108,7 @@ endif;
 			?>
 		</nav><!-- #site-navigation -->
 		<div class="rfpholster">
-		<div id="rfplaunch" class="rfp">SUBMIT RFP</div>
+		<button type="button" id="rfplaunch" class="rfp" aria-haspopup="dialog" aria-controls="rfpmodal">SUBMIT RFP</button>
 		</div>
 		<!-- <div class="headersocial">
 			
